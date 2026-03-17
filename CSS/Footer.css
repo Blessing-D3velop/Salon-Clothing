@@ -52,10 +52,25 @@ footer{
   line-height: 1.2;
 
 }
-
-@media(max-width:750px){
+@media(max-width:500px){
   footer{
-    height: 650px;
+    height: 700px;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .footer-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contact-information,
+  .working-days{
+    line-height: 0.6;
+  }
+}
+
+@media(min-width:500px) and (max-width:750px){
+  footer{
+    height: 550px;
     padding-top: 30px;
   }
   .footer-container{
