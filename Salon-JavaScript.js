@@ -1,7 +1,7 @@
-
-let backButton = document.querySelector('.js-back-button');
+  // 🔥 ADD EVENT AFTER INSERTING HTML
+  let backButton = document.querySelector('.js-back-button');
 
   backButton.addEventListener('click', () => {
-    window.location.href = "Salon-and-Clothing.html";
+    window.location.href = "index.html";
   });
 
