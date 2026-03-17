@@ -1,0 +1,49 @@
+header{
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2000;
+} .heading{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  margin-left: 23px;
+  cursor: pointer;
+  }.hero-section{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 28px;
+
+  }
+  .home,
+  .salon,
+  .clothing,
+  .about,
+  .contact{
+    margin-left: 25px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+  }
+  .home:hover,
+  .salon:hover,
+  .clothing:hover,
+  .about:hover,
+  .contact:hover{
+    opacity: 0.7;
+  }
+
+  @media(max-width: 480px){
+    header{
+      flex-wrap: wrap;
+      height: 120px;
+    }
+  }
