@@ -27,10 +27,7 @@ main{
 }.button-home-container{
   width: 130px;
 }
-.salon-text-container{
-  width: 100%;
-  line-height: 1.6;
-}
+
 .salon-text-description{
   color: rgb(49, 42, 88);
 }
