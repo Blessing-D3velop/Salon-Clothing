@@ -73,6 +73,14 @@ let renderHaisrtyles = (hairstyles) => {
     `;
     hairstylesContainer.innerHTML += html;
   });
+
+  //Book Now
+  document.querySelectorAll('.Book-button').forEach(button => {
+    button.addEventListener('click', () => {
+      let hairstyleName = button.getAttribute('data-name');
+      window.location.href = `mailto:blessingmuthivhi@gmail.com?subject=Booking: ${hairstyleName}`;
+    });
+  });
 };
 
 //filter Hairstyles
@@ -84,8 +92,10 @@ let searchHairstyles = () =>{
   });
 
   renderHaisrtyles(filteredHairstyles);
-
 }
+
+
+
 searchInputElement.addEventListener('input', searchHairstyles);
 
   let backButton = document.querySelector('.js-back-button');
