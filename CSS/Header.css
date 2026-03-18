@@ -46,5 +46,11 @@ header{
       flex-wrap: wrap;
       height: 120px;
     }
-  }
+    .heading{
+      font-size: 23px;
+    }.hero-section{
+      font-size: 18px;
+    }
+}
+  
 
