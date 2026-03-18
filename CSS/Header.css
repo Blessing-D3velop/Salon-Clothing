@@ -14,7 +14,7 @@ header{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
-  margin-left: 23px;
+  margin-left: 20px;
   cursor: pointer;
   }.hero-section{
     display: flex;
@@ -29,7 +29,7 @@ header{
   .clothing,
   .about,
   .contact{
-    margin-left: 22px;
+    margin-left: 18px;
     transition: opacity 0.2s;
     cursor: pointer;
   }

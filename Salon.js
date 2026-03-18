@@ -98,11 +98,11 @@ let searchHairstyles = () =>{
 
 searchInputElement.addEventListener('input', searchHairstyles);
 
-  let backButton = document.querySelector('.js-back-button');
+let backButton = document.querySelector('.js-back-button');
 
-  backButton.addEventListener('click', () => {
-    window.location.href = "index.html";
-  });
+backButton.addEventListener('click', () => {
+  window.location.href = "index.html";
+});
 
 renderHaisrtyles(saloHairstyles);
 
