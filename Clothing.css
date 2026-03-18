@@ -4,13 +4,21 @@
   gap: 30px;
   padding: 40px;
 }
-.cloth-image{
-  width: 100%;
+.cloth-container {
+  position: relative;
+  overflow: hidden; 
   border-radius: 20px;
 }
-.cloth-container{
-  position: relative;
+
+.cloth-image {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease; 
 }
+  .cloth-container:hover .cloth-image, .cloth-container:hover .cloth-heading {
+    transform: scale(1.1);
+  }
+
 .clothing-heading-description{
   position: absolute;
   top:50%;
@@ -19,11 +27,13 @@
   color: white;
 }
 .cloth-heading{
+    font-weight: 700;
   font-size: 35px;
   letter-spacing: 3px;
   top: 60%;
   text-align: center;
-  margin-bottom: -17px;
+  margin-bottom: -15px;
+
 }
 .clothing-sub-heading{
   font-size:16px;
