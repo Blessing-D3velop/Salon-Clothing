@@ -1,0 +1,42 @@
+.clothing-cards-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+.cloth-image{
+  width: 100%;
+  border-radius: 20px;
+}
+.cloth-container{
+  position: relative;
+}
+.clothing-heading-description{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.cloth-heading{
+  font-size: 35px;
+  letter-spacing: 3px;
+  top: 60%;
+  text-align: center;
+  margin-bottom: -17px;
+}
+.clothing-sub-heading{
+  font-size:16px;
+  text-align: center;
+}
+
+@media(max-width: 1023px){
+  .clothing-cards-container{
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media(max-width: 750px){
+  .clothing-cards-container{
+  grid-template-columns: 1fr;
+}
+}

@@ -8,7 +8,8 @@ main{
   margin-top: 100px;
 }
 
-.button-salon-text-container{
+.button-salon-text-container,
+.button-clothing-text-container{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,7 +29,8 @@ main{
   width: 130px;
 }
 
-.salon-text-description{
+.salon-text-description,
+.clothing-text-description{
   color: rgb(49, 42, 88);
 }
 .search-container {
@@ -37,7 +39,8 @@ main{
   margin: 10px auto;
 }
 
-.search-hairstyle {
+.search-hairstyle,
+.search-cloth {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -53,21 +56,24 @@ main{
     padding: 5px;
     font-size: 12px;
   }
-  .button-salon-text-container{
+  .button-salon-text-container,
+  .button-clothing-text-container{
     padding: 20px;
 
   }
   .back-to-home-button{
     font-size: 14px;
   }
-  .search-hairstyle {
+  .search-hairstyle,
+  .search-cloth {
     height: 45px;
     font-size: 14px;
   }
 }
 
 @media(min-width:650px){
-  .button-salon-text-container{
+  .button-salon-text-container,
+  .button-clothing-text-container{
     margin-right:40px;
     margin-left: 40px;
   }
