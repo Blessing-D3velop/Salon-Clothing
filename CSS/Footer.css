@@ -1,92 +1,60 @@
-footer{
+footer {
   background-color: rgb(25, 25, 43);
-  min-height: 300px;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  padding: 30px 20px;
 }
-.footer-container{
+
+.footer-container {
   display: flex;
-  margin: 20px;
-  column-gap: 35px;
   justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* KEY for responsiveness */
 }
+
 
 .about-us,
 .contact-us,
-.hours{
+.hours {
   color: white;
   font-weight: bold;
   font-size: 18px;
 }
-.about-us-text{
+
+
+.about-us-text {
   line-height: 1.6;
-   color: grey;
-   font-size: 16px;
-}
-.contact-information,
-.working-days{
-  color:grey;
-  line-height: 1.4;
+  color: grey;
   font-size: 16px;
 }
 
-.line{
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 20px 35px;
-
+.contact-information,
+.working-days {
+  color: grey;
+  line-height: 1.5; 
+  font-size: 16px;
 }
 
-.rights-container{
+
+.line {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 25px 0;
+}
+
+
+.rights-container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-.rights{
+
+.rights {
   color: grey;
   font-size: 15px;
 }
-.contact-information{
-  line-height: 1.2;
 
-}
-@media(max-width:500px){
-  footer{
-    height: 700px;
-    padding-top: 30px;
-    width: 100%;
-  }
-  .footer-container{
+@media (max-width: 750px) {
+  .footer-container {
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
   }
-  .contact-information,
-  .working-days{
-    line-height: 0.6;
-  }
-}
-
-@media(min-width:500px) and (max-width:750px){
-  footer{
-    height: 550px;
-    padding-top: 30px;
-  }
-  .footer-container{
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .contact-information,
-  .working-days{
-    line-height: 0.6;
-  }
-}
-
-@media(min-width:751px) and (max-width:2000px){
-  footer{
-    height: 330px;
-
-  }
-
 }
