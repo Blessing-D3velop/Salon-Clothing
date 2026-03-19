@@ -1,0 +1,91 @@
+body{
+  overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;;
+}
+.jeans-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 30px;
+}
+.jean-image{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.jean-card{
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.jean-info-container{
+  padding: 10px 20px;
+}
+.jean-name{
+  font-size: 28px;
+  margin-bottom: -17px;
+}
+.jean-price{
+  font-size: 30px;
+  margin-bottom: -2px;
+}
+.available,
+.colors-available{
+  color: rgb(74, 65, 122);
+  font-size: 15px;
+}
+.siezes-available{
+  display: flex;
+  gap: 10px;
+}
+.size{
+
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid rgb(211, 209, 209);
+}
+.color{
+  background-color: rgb(224, 223, 223);
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.button-cart-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.add-to-Cart{
+  width: 100%;
+  max-width: 340px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.in-stock-green{
+  color: green;
+}
+.low-stock-green{
+  color: red;
+}
+@media(max-width: 1023px){
+ .jeans-container{
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media(max-width: 750px){
+  .jeans-container{
+  grid-template-columns: 1fr;
+  }
+  .add-to-Cart{
+    width: 100%;
+    max-width: 340px; /* keep consistent */
+
+}
+}
