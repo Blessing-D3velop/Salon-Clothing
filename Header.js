@@ -27,7 +27,7 @@ about.addEventListener('click', () => {
   aboutSection?.scrollIntoView({ behavior: 'smooth' });
 });
 
-contact?.addEventListener('click', () =>{
+contact.addEventListener('click', () =>{
   const contacSection = document.getElementById('contact-section');
   contacSection?.scrollIntoView({ behavior: 'smooth'});
 });

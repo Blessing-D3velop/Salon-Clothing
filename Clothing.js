@@ -108,18 +108,25 @@ clothingImage.addEventListener('click', () => {
         </div>
   `
   clothingContainer.innerHTML = textHTML;
+  let backToCategory = document.querySelector('.js-back-to-categories');
 
-const stock = document.querySelectorAll('.stock');
+  backToCategory.addEventListener('click', () => {
+    window.location.href='Clothing.html'
+  });
 
-stock.forEach((item) => {
-  if (item.innerHTML === 'In Stock') {
-    item.classList.add('in-stock-green');
-    item.classList.remove('low-stock-green');
-  } else if (item.innerHTML === 'Low Stock') {
-    item.classList.add('low-stock-green');
-    item.classList.remove('in-stock-green');
-  }
-});
+  const stock = document.querySelectorAll('.stock');
+
+  stock.forEach((item) => {
+    if (item.innerHTML === 'In Stock') {
+      item.classList.add('in-stock-green');
+      item.classList.remove('low-stock-green');
+    } else if (item.innerHTML === 'Low Stock') {
+      item.classList.add('low-stock-green');
+      item.classList.remove('in-stock-green');
+    }
+  });
+
+  
 
 });
 
@@ -127,8 +134,3 @@ backButton.addEventListener('click', () =>{
   window.location.href='index.html';
 });
 
-let backToCategory = document.querySelector('.js-back-to-categories');
-
-backToCategory.addEventListener('click', () => {
-  window.location.href='Clothing.html'
-});

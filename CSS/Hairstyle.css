@@ -4,6 +4,9 @@
   column-gap: 35px;
   row-gap: 35px;
 }
+.cart{
+  width: 20px;
+}
 .hairstyle-card{
   box-shadow: 0 4px 12px rgba(0,0,0,0.35);
   border-radius: 20px;
