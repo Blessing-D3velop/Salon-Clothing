@@ -49,8 +49,8 @@ body{
 .back-to-categories{
   background-color: black;
   color: white; 
-  padding: 2px 15px;
-  font-size: 19px;
+  padding: 2px 5px;
+  font-size: 14px;
   flex-wrap: nowrap;
   width: 100%;
   max-width: 200px;

@@ -110,3 +110,8 @@ let renderJeans = (jeans) => {
 
 
 renderJeans(jeansArr);
+
+document.querySelector('.js-back-to-categories')
+  .addEventListener('click', () => {
+    window.location.href = 'Clothing.html';
+  });
