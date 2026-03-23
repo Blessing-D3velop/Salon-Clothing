@@ -51,6 +51,7 @@ body{
   padding: 8px 10px;
   font-size: 14px;
   border-radius: 3px;
+  border: 1px solid rgb(211, 209, 209);
 }
 .button-cart-container{
   display: flex;
@@ -58,7 +59,7 @@ body{
   align-items: center;
   padding: 40px;
 }
-.add-to-Cart{
+.add-to-cart{
   width: 100%;
   max-width: 340px;
   background-color: black;
