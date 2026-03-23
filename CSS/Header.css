@@ -44,17 +44,30 @@ header{
     width: 40px;
     margin-right: 11px;
     margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .cart-container{
+  .cart-container {
     position: relative;
-    margin-right: 17px;
+    margin-right: 1px;
+    display: inline-block; /* ensure width wraps content */
   }
-  .cart-quantity{
+
+  .cart-quantity {
     position: absolute;
-    top: 4px;
-    left: 37%;
+    top: -5px;       /* adjust as needed */
+    right: 10px;     /* move it slightly outside the cart icon */
     color: white;
+    min-width: 16px; /* ensures 1-3 digits fit nicely */
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 4px;  /* small padding for wider numbers */
+    border-radius: 50%; /* optional, for round badge */
+    background-color: red; /* optional, looks like a badge */
   }
+
 
   @media(max-width: 480px){
     header{

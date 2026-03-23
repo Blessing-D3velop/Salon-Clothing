@@ -1,3 +1,5 @@
+import { cart, addToCart } from "./Cart.js";
+
 const jeansArr = [
   {
     id: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
@@ -72,32 +74,22 @@ let renderJeans = (jeans) => {
     jeansContainer.innerHTML += html;
   });
 
+  let updateCartQunatity = () =>{
+    let totalCartQuantity = 0;
+    cart.forEach((item) => {
+      totalCartQuantity += item.quantity;
+    });
+    document.querySelector('.js-cart-quantity').innerHTML = totalCartQuantity;
+  }
+
+
   document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
       const jeanId = button.dataset.jeanId;
 
-      let matchingItem;
+      addToCart(jeanId);
 
-      cart.forEach((item) => {
-        if (item.jeanId === jeanId) {
-          matchingItem = item;
-        }
-      });
-
-      if (matchingItem) {
-        matchingItem.quantity++;
-      } else {
-        cart.push({
-          jeanId: jeanId,
-          quantity: 1
-        });
-      }
-
-      let totalCartQuantity = 0;
-      cart.forEach((item) => {
-        totalCartQuantity += item.quantity;
-      });
-      document.querySelector('.js-cart-quantity').innerHTML = totalCartQuantity;
+      updateCartQunatity();
 
     });
   });
