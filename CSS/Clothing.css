@@ -58,6 +58,7 @@ body{
   border-radius: 4px;
   cursor: pointer;
   white-space: nowrap;
+  border: none;
 }
 
 @media(max-width: 1023px){
