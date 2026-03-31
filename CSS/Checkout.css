@@ -188,3 +188,13 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px){
+  body{
+    padding: 40px 0px;
+    min-width: auto;
+  }
+  .hero-section{
+    padding-left: 60px;
+  }
+}
