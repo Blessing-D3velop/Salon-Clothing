@@ -1,6 +1,6 @@
 import { cart, addToCart } from "./Cart.js";
 
-const jeansArr = [
+export const jeansArr = [
   {
     id: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
     image: 'Images and Icons/Clothing Collection/Slim Fit Denim.png',
@@ -21,7 +21,7 @@ const jeansArr = [
   },
   {
     id: '83d4ca15-0f35-48f5-b7a3-1ea210004f2e',
-    image: 'Images and Icons/Clothing Collection/Classic Straight Jeans.png',
+    image: 'Images and Icons/Clothing Collection/Relaxed fit Denim.png',
     name: 'Relaxed Fit Denim',
     price: 7499,
     size: '',
@@ -33,6 +33,8 @@ const jeansArr = [
 const jeansContainer = document.querySelector('.js-jeans-container');
 
 let renderJeans = (jeans) => {
+
+  if (!jeansContainer) return;
   jeansContainer.innerHTML = '';
 
   jeans.forEach((jean) => {
@@ -82,6 +84,8 @@ let renderJeans = (jeans) => {
     document.querySelector('.js-cart-quantity').innerHTML = totalCartQuantity;
   }
 
+  
+
 
   document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
@@ -111,7 +115,16 @@ let renderJeans = (jeans) => {
 
 renderJeans(jeansArr);
 
-document.querySelector('.js-back-to-categories')
-  .addEventListener('click', () => {
+const backBtn = document.querySelector('.js-back-to-categories');
+if (backBtn) {
+  backBtn.addEventListener('click', () => {
     window.location.href = 'Clothing.html';
   });
+}
+
+const cartBtn = document.querySelector('.js-cart-container');
+if (cartBtn) {
+  cartBtn.addEventListener('click', () =>{
+    window.location.href='Checkout.html'
+  });
+}

@@ -6,7 +6,7 @@ const about = document.querySelector('.js-about');
 const contact = document.querySelector('.js-contact');
 const heading =document.querySelector('.heading-text')
 
-heading.addEventListener('click', () =>{
+heading.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
 
@@ -22,13 +22,17 @@ clothing.addEventListener('click', () =>{
   window.location.href = 'Clothing.html';
 });
 
-about.addEventListener('click', () => {
-  const aboutSection = document.getElementById('about-section');
-  aboutSection?.scrollIntoView({ behavior: 'smooth' });
-});
+if (about) {
+  about.addEventListener('click', () => {
+    const aboutSection = document.getElementById('about-section');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  });
+}
+if (contact){
+  contact.addEventListener('click', () =>{
+    const contacSection = document.getElementById('contact-section');
+    contacSection?.scrollIntoView({ behavior: 'smooth'});
+  });
+}
 
-contact.addEventListener('click', () =>{
-  const contacSection = document.getElementById('contact-section');
-  contacSection?.scrollIntoView({ behavior: 'smooth'});
-});
 
